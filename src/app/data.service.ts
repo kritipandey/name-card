@@ -6,6 +6,7 @@ import { Data } from './data.model';
 @Injectable({providedIn: 'root'})
 
 export class DataService{
+  inputData:Data[] = [];
 
   constructor(private http: HttpClient){}
 

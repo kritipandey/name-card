@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DataFormComponent } from './data-form/data-form.component';
-import { RoutingComponent } from './routing/routing.component';
+import { AllCardsComponent } from './all-cards/all-cards.component';
+import { CreateCardComponent } from './create-card/create-card.component';
 
 const routes: Routes = [
-  {path: '', redirectTo:'tab1', pathMatch: 'full'},
-  {path: 'tab1', component: DataFormComponent},
-  {path: 'tab2', component: RoutingComponent}
+  {path: '', redirectTo:'create', pathMatch: 'full'},
+  {path: 'create', component: CreateCardComponent},
+  {path: 'all-cards', component: AllCardsComponent}
 ];
 
 @NgModule({
